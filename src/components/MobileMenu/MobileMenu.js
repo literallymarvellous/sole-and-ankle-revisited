@@ -3,7 +3,7 @@ import React from "react";
 import styled from "styled-components/macro";
 import { DialogOverlay, DialogContent } from "@reach/dialog";
 
-import { COLORS, QUERIES } from "../../constants";
+import { COLORS, QUERIES, WEIGHTS } from "../../constants";
 
 import UnstyledButton from "../UnstyledButton";
 import Icon from "../Icon";
@@ -93,7 +93,7 @@ const Nav = styled.nav`
   gap: 22px;
   font-size: ${18 / 16}rem;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: ${WEIGHTS.medium};
 `;
 
 const Footer = styled.footer`
@@ -102,6 +102,7 @@ const Footer = styled.footer`
   align-self: flex-start;
   gap: 14px;
   font-size: ${14 / 16}rem;
+  font-weight: ${WEIGHTS.normal};
   color: ${COLORS.gray[700]};
 `;
 
